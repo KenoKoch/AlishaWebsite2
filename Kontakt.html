@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alisha Fotografie</title>
+         <!-- Styling from Form Taxi -->
+        <style>
+            .frmtx {
+                --font-size: 100%;
+                --font-family: inherit;
+                --font-color: inherit;
+                --background-color: #FFF;
+                --border-color: #AAA;
+                --border-width: 1px;
+                --border-radius: 5px;
+            margin: 1rem;min-width: 240px}
+            .frmtx * {color: var(--font-color);font-family: var(--font-family);font-size: var(--font-size);margin: 0;padding: 0;appearance: auto;outline: none;box-sizing: border-box}
+            .frmtx label {padding: 0;margin: 1em 0 .3em;display: block;line-height: 1.3}
+            .frmtx label:first-child {margin-top: 0}
+            .frmtx input, .frmtx textarea, .frmtx button {border: var(--border-width) solid var(--border-color);border-radius: var(--border-radius);background-color: var(--background-color)}
+            .frmtx input, .frmtx textarea {width: 100%;resize: none;padding: .5em;line-height: 1.3}
+            .frmtx input[name="_gotcha"] {display:none}
+            .frmtx input[type="checkbox"] {display: inline;width: 1.1em;height: 1.1em;appearance: auto;margin-right: .2em}
+            .frmtx button {display: block;padding: .5em 1.5em;margin: 1.5em 0 0;line-height: 1.5;font-weight: bold;cursor: pointer}
+        </style>
+    </head>
+
+<body>
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="/index">Alisha Fotografie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/ÜberMich">Über mich</a></li>
+                    <li><a class="dropdown-item" href="/Portfolio">Mein Portfolio</a></li>
+                    <li><a class="dropdown-item" href="/Kontakt">Kontakt</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <form action="https://form.taxi/s/FORM_CODE" class="frmtx" method="POST" accept-charset="utf-8">
+            <label for="name">Name</label>
+            <input type="text" name="Name" id="name" required>
+            <label for="mail">E-Mail-Adresse</label>
+            <input type="email" name="E-Mail" id="mail" required>
+            <label for="msg">Ihre Nachricht</label>
+            <textarea rows="5" name="Nachricht" id="msg" required></textarea>
+            <label><input type="checkbox" name="Datenverarbeitung bestätigt" value="Ja" required> Ich bin mit der Verarbeitung meiner Eingaben zum Zwecke der Anfragebearbeitung durch <a href="https://form.taxi/de" target="_blank">Form.taxi</a> einverstanden.</label>
+            <input type="text" name="_gotcha" value="">
+            <button type="submit">Absenden</button>
+        </form>
+
+    </main>
+
+    <footer class="bg-body-tertiary text-center text-lg-start mt-5">
+        <div class="container p-4">
+        <div class="row">
+            <!-- Links-Spalte -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Alisha Fotografie</h5>
+            <p>
+                Deine Fotografie-Website für besondere Momente.<br>
+                <a href="/Impressum" class="text-body">Impressum</a> |
+                <a href="/Datenschutz" class="text-body">Datenschutz</a>
+            </p>
+            </div>
+            <!-- Social Media Spalte -->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Folge mir</h5>
+            <a href="https://instagram.com/" class="btn btn-outline-dark btn-floating m-1" role="button" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://facebook.com/" class="btn btn-outline-dark btn-floating m-1" role="button" target="_blank">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="mailto:deine@email.de" class="btn btn-outline-dark btn-floating m-1" role="button">
+                <i class="fas fa-envelope"></i> Mail
+            </a>
+            </div>
+        </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0,0,0,0.05);">
+        © 2025 Alisha Fotografie
+        </div>
+    </footer>
+
+</body>
+</html>
