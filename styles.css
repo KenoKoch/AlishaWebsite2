@@ -1,17 +1,17 @@
 .card-img-top {
     width: 100%;
-    height: 15vw;         /* oder z.B. 200px, 15rem, 30vh, je nach gewünschter Höhe */
-    object-fit: contain;    /* Bild wird zugeschnitten, nicht verzerrt */
+    height: 15vw;         
+    object-fit: contain;    
   }
 
   .card {
-    transition: transform 0.3s cubic-bezier(.4,2,.6,1); /* sanfte Animation */
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1); 
   }
 
   .card:hover {
-    transform: scale(1.07); /* Karte wird 7% größer */
-    z-index: 2; /* hebt die Karte über die anderen */
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2); /* optional: starker Schatten beim Hover */
+    transform: scale(1.07); 
+    z-index: 2; 
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2); 
   }
 
   html, body {
